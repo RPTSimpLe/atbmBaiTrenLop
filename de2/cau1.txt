@@ -1,0 +1,11 @@
+* Mở cmd: 
+gõ ping hunre.edu.vn sẽ ra 118.70.67.55
+
+* nmap:
+1. Tìm hệ điều hành đang sử dụng để lưu trữ trang website
+target: 118.70.67.55
+command: nmap -O 118.70.67.55
+
+2. Tìm tất cả các cổng (port) sử dụng giao thức TCP,  UDP
+target: 118.70.67.55
+command: Nmap 118.70.67.55
