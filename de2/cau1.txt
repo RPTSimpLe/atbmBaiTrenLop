@@ -1,11 +1,16 @@
-* Mở cmd: 
-gõ ping hunre.edu.vn sẽ ra 118.70.67.55
+Bước 1: Khởi động phần mềm nmap 
+Bước 2: Tại mục Target nhập đường dẫn: https://hunre.edu.vn  
 
-* nmap:
-1. Tìm hệ điều hành đang sử dụng để lưu trữ trang website
-target: 118.70.67.55
-command: nmap -O 118.70.67.55
-
-2. Tìm tất cả các cổng (port) sử dụng giao thức TCP,  UDP
-target: 118.70.67.55
-command: Nmap 118.70.67.55
+ 
+Bước 3: Tìm địa chỉ IP của trang website trên 
+Tại mục Command gõ lệnh: nmap -sn hunre.edu.vn 
+Sau đó nhấn nút Scan 
+Bước 4: Tìm hệ điều hành đang sử dụng để lưu trữ trang website trên 
+Tại mục Command gõ lệnh: nmap -O hunre.edu.vn 
+Sau đó nhấn nút Scan 
+Bước 5: Tìm tất cả các cổng (port) sử dụng giao thức TCP  
+Tại mục Command gõ lệnh: nmap -p 1-65535 -T4 -A -v hunre.edu.vn 
+Sau đó nhấn nút Scan 
+Bước 6: Tìm tất cả các cổng (port) sử dụng giao thức TCP  
+Tại mục Command gõ lệnh: nmap -sS -sU -T4 -A -v hunre.edu.vn 
+Sau đó nhấn nút Scan
